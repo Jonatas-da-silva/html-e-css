@@ -4,10 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela grande</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        thead,tfoot{
+            background-color: rgba(0, 0, 0, 0.351);
+            color: rgb(255, 255, 255);
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
     <h1>Tabela maior/grande</h1>
-    <table>
+    <table> <!-- criaçao da tabela-->
+        <thead> <!--Criação do título da tabela-->
+            <tr> <!--Cria a linha em que será inserida as célular-->
+                <th>Estados</th><!--Uma célula que contem um cabeçalho-->
+                <th>População</th> 
+            </tr>
+        </thead>
+        <tbody><!--Criação do corpo da minha tabela-->
+            <tr> <!--Criação de uma linha-->
+                <td>São Paulo</td><!--Criação de uma célula de dado-->
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">14 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">564 692,7</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">1 570 745,7</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">148 825,6</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">5 822,1</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">46 077,5</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">340 086,7</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">331 983,3	</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">903 357,9</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">357 125,0</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">1 247 689,5</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">199 314,9</td>
+            </tr>
+            <tr>
+                <td>Pernambuco	</td>
+                <td class="num">98 311,6</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">251 529,2</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">52 796,8</td>
+            </tr>
+            <tr>
+                <td>	Rio Grande do Sul</td>
+                <td class="num">281 748,5</td>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">237 576,2</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">224 299,0</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina	</td>
+                <td class="num">95 346,2</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">21 910,3</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">277 620,9</td>
+            </tr>
+    
+           
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitante</th>
+                <td>
+                    <strong>2110 147 125</strong>
+                </td>
+            </tr>
+
+        </tfoot>
         
     </table>
     
