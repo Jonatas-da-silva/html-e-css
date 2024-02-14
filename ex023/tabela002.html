@@ -8,15 +8,24 @@
 
         body{
             font-family: Arial, Helvetica, sans-serif;
+            position: relative;
         }
         table{
             width: 500px;
             border-collapse: collapse;
             text-align: center;
         }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:rgba(0, 0, 0, 0.753);
+        }
         thead,tfoot{
-            background-color: rgba(0, 0, 0, 0.351);
+            background-color: rgba(0, 0, 0, 0.753);
             color: rgb(255, 255, 255);
+        }
+        tbody>tr:nth-child(even){
+            background-color: lightgray;
         }
         td, th{
             border: 1px solid black;
@@ -24,6 +33,7 @@
         }
         .num{
             text-align: right;
+            width: 98px;
         }
     </style>
 </head>
@@ -39,7 +49,7 @@
         <tbody><!--Criação do corpo da minha tabela-->
             <tr> <!--Criação de uma linha-->
                 <td>São Paulo</td><!--Criação de uma célula de dado-->
-                <td>45 919 049</td>
+                <td class="num">45 919 049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
