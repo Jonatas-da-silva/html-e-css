@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #b48e8e71;
+        }
+      #caixa{
+        color:white;
+        border: 2px solid rgba(68, 64, 64, 0.274);
+        padding: 9px 16px;
+        background-image:url('imagens/senha.webp') ;
+      }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.js" id="caixa" autocomplete="off" method="post">
+
+        <p><label for="inome">Nome: </label>
+            <input type="text" name="Nome" id="inome"></p>
+
+        <P><label for="iCPF">CPF:</label>
+             <input type="number" name="CPF" id="iCPF"></P>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
